@@ -18,6 +18,7 @@ public class ErroDeValidacaoHandler {
 	
 	@Autowired
 	private MessageSource messageSource;
+
 	
 	@ResponseStatus(code = HttpStatus.BAD_REQUEST) // o retorno do metodo sera o codigo http 400
 	@ExceptionHandler(MethodArgumentNotValidException.class)  //anotação para tratar exceções de formulários
